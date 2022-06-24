@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+header ul{
+    list-style: none;
+}
+header li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    margin: 0px;
+    background-color: gray;
+}
+.menu_primario{
+    height: 50px;
+    margin: 0px;
+}
+#marcas{
+    overflow-x: scroll;
+}
+#marcas img{
+    width: 30%;
+    margin: 10px;
+    filter: grayscale(1);
+    transition: filter 0.5s;
+}
+#marcas img:hover{
+    filter: grayscale(0);
+}
+#ofertas_del_mes{
+    background-color: rgb(49, 49, 49);
+}
+#ofertas_del_mes__div_1{
+    height: 200px;
+    color: black;
+}
+#ofertas_del_mes__div_1 span{
+    color: red;
+}
+#ofertas_del_mes__div_2{
+    overflow-x: scroll;
+}
+.producto_div{
+    margin: 10px;
+    border-radius: 10px;
+}
+#galeria{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#galeria img{
+    width: 100%;
+    border: 1px solid white;
+    transition: transform 1s;
+}
+#galeria img:hover{
+    transform: scale(1.1,1.1);
+}
+.img1{
+    grid-area: 1 / 1 / 3 / 3;
+}
+.img8{
+    grid-area: 3 /3 / 5 / 5;
+}
+@media screen and (min-width: 480px) {
+    #marcas{
+        height: 180px;
+    }
+}
+@media screen and (min-width: 768px) {
+    #marcas{
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+        height: 250px;
+    }
+    #marcas img{
+        width: 30%;
+        margin: 10px;
+    }
+}
