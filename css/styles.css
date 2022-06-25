@@ -1,7 +1,15 @@
 *{
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    overflow-x: hidden;
+}
+.menu_secundario{
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.1rem;
+}
+.menu_primario{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.1rem;
+    height: 50px;
 }
 header ul{
     list-style: none;
@@ -11,19 +19,13 @@ header li a{
     color: white;
 }
 .navbar{
-    margin: 0px;
     background-color: gray;
-}
-.menu_primario{
-    height: 50px;
-    margin: 0px;
 }
 #marcas{
     overflow-x: scroll;
 }
 #marcas img{
     width: 30%;
-    margin: 10px;
     filter: grayscale(1);
     transition: filter 0.5s;
 }
@@ -34,8 +36,14 @@ header li a{
     background-color: rgb(49, 49, 49);
 }
 #ofertas_del_mes__div_1{
-    height: 200px;
     color: black;
+    height: 60px;
+    font-family: 'Bebas Neue', cursive;
+}
+.ofertas_titulo{
+    font-size: 2.5rem;
+    margin-top: 10px;
+    overflow-y: hidden;
 }
 #ofertas_del_mes__div_1 span{
     color: red;
@@ -44,9 +52,43 @@ header li a{
     overflow-x: scroll;
 }
 .producto_div{
-    margin: 10px;
+    margin: 15px;
+    padding: 5px;
+    padding-bottom: 0px;
     border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
 }
+.nombre_articulo{
+    text-align: center;
+    color: black;
+    font-weight: 800;
+    font-size: 1.3rem;
+    overflow-y: hidden;
+}
+.precio_articulo{
+    text-align: center;
+    font-size: 1.1rem
+}
+.precio_articulo span{
+    text-decoration: line-through 2px;
+    font-size: .8rem;
+}
+.icono_caract{
+    font-size: 2.5rem;
+    color: red;
+}
+.titulo_caract{
+    font-size: 1rem;
+    font-family: 'Mukta', sans-serif;
+}
+.descripcion_caract{
+    font-size: .8rem;
+    font-family: 'Mukta', sans-serif;
+    overflow-y: hidden;
+}
+
+
+
 #galeria{
     width: 100vw;
     display: grid;
@@ -66,20 +108,4 @@ header li a{
 .img8{
     grid-area: 3 /3 / 5 / 5;
 }
-@media screen and (min-width: 480px) {
-    #marcas{
-        height: 180px;
-    }
-}
-@media screen and (min-width: 768px) {
-    #marcas{
-        width: 100%;
-        display: flex;
-        overflow-x: scroll;
-        height: 250px;
-    }
-    #marcas img{
-        width: 30%;
-        margin: 10px;
-    }
-}
+/* ------------------------------------------Media Querie 480px------------------------------------------------- */
