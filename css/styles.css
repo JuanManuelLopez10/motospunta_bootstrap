@@ -17,6 +17,7 @@ header ul{
 header li a{
     text-decoration: none;
     color: white;
+    overflow-y: hidden;
 }
 .navbar{
     background-color: gray;
@@ -42,6 +43,7 @@ header li a{
 }
 .ofertas_titulo{
     font-size: 2.5rem;
+    font-weight: 800;
     margin-top: 10px;
     overflow-y: hidden;
 }
@@ -80,15 +82,15 @@ header li a{
 .titulo_caract{
     font-size: 1rem;
     font-family: 'Mukta', sans-serif;
+    overflow-y: hidden;
+    font-weight: 800;
 }
 .descripcion_caract{
     font-size: .8rem;
     font-family: 'Mukta', sans-serif;
     overflow-y: hidden;
+    text-align: center;
 }
-
-
-
 #galeria{
     width: 100vw;
     display: grid;
@@ -109,3 +111,40 @@ header li a{
     grid-area: 3 /3 / 5 / 5;
 }
 /* ------------------------------------------Media Querie 480px------------------------------------------------- */
+@media screen and (min-width: 480px) {
+    .menu_primario{
+        font-size: 1.5rem;
+    }
+    #ofertas_del_mes__div_1{
+        height: 70px;
+    }
+    .ofertas_titulo{
+        font-size: 3rem;
+    }    
+    .nombre_articulo{
+        font-size: 1.6rem;
+    }
+    .precio_articulo{
+        font-size: 1.5rem;
+    }
+    .precio_articulo span{
+        font-size: 1.2rem;
+    }
+    .icono_caract{
+        font-size: 3.5rem;
+    }
+    .titulo_caract{
+        font-size: 1.3rem;
+    }
+    .descripcion_caract{
+        font-size: 1.1rem;
+        font-family: 'Mukta', sans-serif;
+        overflow-y: hidden;
+    }       
+}
+/* ------------------------------------------Media Querie 576px------------------------------------------------- */
+@media screen and (min-width: 576px) {
+    #ofertas_del_mes__div_1{
+        height: 100%;
+    }
+}
