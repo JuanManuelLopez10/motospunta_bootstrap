@@ -14,6 +14,9 @@
 header ul{
     list-style: none;
 }
+header li{
+    overflow: hidden;
+}
 header li a{
     text-decoration: none;
     color: white;
@@ -26,7 +29,6 @@ header li a{
     overflow-x: scroll;
 }
 #marcas img{
-    width: 30%;
     filter: grayscale(1);
     transition: filter 0.5s;
 }
@@ -143,8 +145,15 @@ header li a{
     }       
 }
 /* ------------------------------------------Media Querie 576px------------------------------------------------- */
-@media screen and (min-width: 576px) {
-    #ofertas_del_mes__div_1{
-        height: 100%;
+@media screen and (min-width: 480px) {
+    .menu_secundario{
+        font-size: 1.5rem;
+    }
+    .menu_primario{
+        font-size: 1.9rem;
+        overflow-y: hidden;
+    }
+    #marcas{
+        height: 200px;
     }
 }
