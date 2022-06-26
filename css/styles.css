@@ -40,9 +40,6 @@ header li a{
 .navbar{
     background-color: gray;
 }
-#marcas{
-    overflow-x: scroll;
-}
 #marcas img{
     filter: grayscale(1);
     transition: filter 0.5s;
@@ -185,9 +182,6 @@ header li a{
     .menu_primario{
         font-size: 1.5rem;
         overflow-y: hidden;
-    }
-    #marcas{
-        height: 200px;
     }
 .opciones{
     font-family: 'Bebas Neue', cursive;
