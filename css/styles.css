@@ -2,6 +2,21 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
+h1{
+    overflow-y: hidden;
+}
+h2{
+    overflow-y: hidden;
+}
+h3{
+    overflow-y: hidden;
+}
+h4{
+    overflow-y: hidden;
+}
+h5{
+    overflow-y: hidden;
+}
 .menu_secundario{
     font-family: 'Mukta', sans-serif;
     font-size: 1.1rem;
@@ -112,6 +127,27 @@ header li a{
 .img8{
     grid-area: 3 /3 / 5 / 5;
 }
+.opciones{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2rem;
+}
+.opciones li a{
+    text-decoration: none;
+    color: black;
+}
+.foto_opciones{
+    visibility: hidden;
+}
+#productos{
+    background-color: rgb(43, 43, 43);
+}
+#productos h3{
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+.producto .producto_div{
+    float: left;
+}
 /* ------------------------------------------Media Querie 480px------------------------------------------------- */
 @media screen and (min-width: 480px) {
     .menu_primario{
@@ -143,17 +179,30 @@ header li a{
         font-family: 'Mukta', sans-serif;
         overflow-y: hidden;
     }       
-}
-/* ------------------------------------------Media Querie 576px------------------------------------------------- */
-@media screen and (min-width: 480px) {
     .menu_secundario{
         font-size: 1.5rem;
     }
     .menu_primario{
-        font-size: 1.9rem;
+        font-size: 1.5rem;
         overflow-y: hidden;
     }
     #marcas{
         height: 200px;
+    }
+.opciones{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.6rem;
+    }
+}
+@media screen and (min-width: 576px){
+    .menu_secundario{
+        font-size: 1.3rem;
+    }
+}
+
+/* ------------------------------------------Media Querie 480px------------------------------------------------- */
+@media screen and (min-width: 768px) {
+    .foto_opciones{
+        visibility: visible;
     }
 }
