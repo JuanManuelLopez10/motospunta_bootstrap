@@ -142,6 +142,9 @@ header li a{
 .producto .producto_div{
     float: left;
 }
+#contacto_form{
+    background-color: rgb(43, 43, 43);
+}
 /* ------------------------------------------Media Querie 480px------------------------------------------------- */
 @media screen and (min-width: 480px) {
     .menu_primario{
