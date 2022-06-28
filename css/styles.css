@@ -145,6 +145,20 @@ header li a{
 #contacto_form{
     background-color: rgb(43, 43, 43);
 }
+footer{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.logo_redes_footer{
+    font-size: 1.5rem;
+}
+.titulo_de_lista{
+    font-size: 1.3rem;
+}
 /* ------------------------------------------Media Querie 480px------------------------------------------------- */
 @media screen and (min-width: 480px) {
     .menu_primario{
