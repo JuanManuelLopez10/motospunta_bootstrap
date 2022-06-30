@@ -19,8 +19,8 @@
     <header>
         <nav class="navbar p-0">
             <div class="p-0 d-flex justify-content-center col-12 col-sm-6">
-              <a class="navbar-brand" href="./index.html">
-                <img class="col-12" src="./assets/img/logos/logo_motos_punta_index.webp" alt="motospunta">
+              <a class="navbar-brand d-flex justify-content-center" href="./index.html">
+                <img class="col-8" src="./assets/img/logos/logo_motos_punta_index.webp" alt="motospunta">
               </a>
             </div>
             <ul class="menu_secundario container-fluid col d-flex justify-content-around">
@@ -38,7 +38,7 @@
         </nav>
     </header>
     <main>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
               <div class="carousel-item active">
                   <img src="./assets/img/wallpapers/cfmoto_mt650.png" class="d-block w-100" alt="cfmoto_mt650">
@@ -47,11 +47,11 @@
                   <img src="./assets/img/wallpapers/mt_thunder_4.png" class="d-block w-100" alt="mt_thunder_4">
               </div>        
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -84,39 +84,39 @@
               </button>
             </div>
       </section>
-        <section id="ofertas_del_mes" class="container-fluid row p-0 m-0">
-          <div id="ofertas_del_mes__div_1" class="container-fluid col-12 col-sm-5 d-flex justify-content-center align-items-center h-100">
+        <section id="ofertas_del_mes">
+          <div id="ofertas_del_mes__div_1">
               <h2 class="ofertas_titulo">Ofertas del mes <span>Junio</span></h2>
           </div>
-          <div id="ofertas_del_mes__div_2" class="container-fluid col d-flex justify-content-start">
+          <div id="ofertas_del_mes__div_2">
               <div id="carouselExampleControls-b" class="carousel slide m-0 p-0" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <div class="w-100 row d-flex justify-content-center">
-                          <div class="container-fluid producto_div col-5 col-md-4 bg-white d-flex p-0 flex-column justify-content-start align-items-center shadow p-3 mb-5 bg-body rounded">
-                              <img class="col-12" src="./assets/img/productos/cascos/cerrados/stinger_maniac_rosado_1.png" alt="stinger_maniac_rosado_1">
-                              <h4 class="nombre_articulo">MT Stinger Maniac</h4>
-                              <h5 class="precio_articulo"><span>$4000</span>  $3500</h5>
+                      <div class="contenedor_productos_oferta">
+                        <div class="container-fluid producto_div_ofertas col-5 bg-white d-flex p-0 flex-column justify-content-start align-items-center shadow p-3 mb-5 bg-body rounded">
+                            <img class="col-12" src="./assets/img/productos/cascos/cerrados/stinger_maniac_rosado_1.png" alt="stinger_maniac_rosado_1">
+                            <h4 class="nombre_articulo">MT Stinger Maniac</h4>
+                            <h5 class="precio_articulo"><span>$4000</span>  $3500</h5>
                           </div>
-                          <div class="container-fluid producto_div col-5 col-md-4 bg-white d-flex flex-column justify-content-start align-items-center shadow p-3 mb-5 bg-body rounded">
-                              <img class="col-12" src="./assets/img/productos/cascos/cerrados/stinger_maniac_rosado_1.png" alt="stinger_maniac_rosado_1">
-                              <h4 class="nombre_articulo">MT Stinger Maniac</h4>
-                              <h5 class="precio_articulo"><span>$4000</span>  $3500</h5>
-                          </div>      
+                          <div class="container-fluid producto_div_ofertas col-5 bg-white d-flex p-0 flex-column justify-content-start align-items-center shadow p-3 mb-5 bg-body rounded">
+                            <img class="col-12" src="./assets/img/productos/accesorios/puños_circuit_interlagos_azules.png" alt="puños_circuit_interlagos_azules">
+                            <h4  class="nombre_articulo">Circuit azules</h4>
+                            <h5 class="precio_articulo"><span>$600</span>  $450</h5>
+                          </div>
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <div class="w-100 row d-flex justify-content-center">
-                          <div class="container-fluid producto_div col-5 col-md-4 bg-white d-flex flex-column justify-content-start align-items-center p-0 shadow p-3 mb-5 bg-body rounded">
-                              <img class="col-12" src="./assets/img/productos/motos/cubs/vital_twist_125_roja.png" alt="vital_twist_125_roja">
-                              <h4 class="nombre_articulo">Vital Twist 125 Roja</h4>
-                              <h5 class="precio_articulo"><span>U$S 1350</span>  U$S1250</h5>
-                          </div>
-                          <div class="container-fluid producto_div col-5 col-md-4 bg-white d-flex flex-column justify-content-start align-items-center shadow p-3 mb-5 bg-body rounded">
-                              <img class="col-12" src="./assets/img/productos/accesorios/puños_circuit_interlagos_azules.png" alt="puños_circuit_interlagos_azules">
-                              <h4  class="nombre_articulo">Circuit Interlagos azules</h4>
-                              <h5 class="precio_articulo"><span>$600</span>  $450</h5>
-                          </div>
+                      <div class="contenedor_productos_oferta">
+                        <div class="container-fluid producto_div_ofertas col-5 bg-white d-flex p-0 flex-column justify-content-start align-items-center shadow p-3 mb-5 bg-body rounded">
+                            <img class="col-12" src="./assets/img/productos/motos/cubs/vital_twist_125_roja.png" alt="vital_twist_125_roja">
+                            <h4 class="nombre_articulo">Vital Twist 125</h4>
+                            <h5 class="precio_articulo">U$S1250</h5>
+                        </div>
+                        <div class="container-fluid producto_div_ofertas col-5 bg-white d-flex p-0 flex-column justify-content-start align-items-center shadow p-3 mb-5 bg-body rounded">
+                            <img class="col-12" src="./assets/img/productos/cascos/cerrados/stinger_maniac_rosado_1.png" alt="stinger_maniac_rosado_1">
+                            <h4 class="nombre_articulo">MT Stinger Maniac</h4>
+                            <h5 class="precio_articulo"><span>$4000</span>  $3500</h5>
+                        </div>  
                       </div>
                     </div>
                   </div>
@@ -131,7 +131,7 @@
                 </div>
           </div>
       </section>
-      <div id="carouselExampleControls-a" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleFade-a" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
               <div class="carousel-item active">
                   <img src="./assets/img/wallpapers/cfmoto_mt650.png" class="d-block w-100" alt="cfmoto_mt650">
@@ -140,11 +140,11 @@
                   <img src="./assets/img/wallpapers/mt_thunder_4.png" class="d-block w-100" alt="mt_thunder_4">
               </div>        
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls-a" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade-a" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls-a" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade-a" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -201,12 +201,12 @@
           <li><span>Teléfono:</span>  42 245 163
           <li><span>Teléfono:</span> <a href="https://wa.me/59899673830" target="_blank"> 099 673 830 </a></li>
       </ul>
-      <div class="redes_footer d-flex justify-content-around col-12">
+      <div class="redes_footer d-flex justify-content-around col-12 col-md-6">
           <i class="logo_redes_footer bi-instagram"></i>
           <i class="logo_redes_footer bi-facebook"></i>
           <a href="https://wa.me/59899673830" target="_blank"><i class="logo_redes_footer bi-whatsapp"></i></a>
       </div>
-      <p class="col-12 d-flex justify-content-center">
+      <p class="col-12 col-md-6 d-flex justify-content-center">
           2022 - Motos Punta. Todos los derechos reservados.
       </p>
   </footer>

@@ -17,6 +17,9 @@ h4{
 h5{
     overflow-y: hidden;
 }
+span{
+    overflow-y: hidden;
+}
 .menu_secundario{
     font-family: 'Mukta', sans-serif;
     font-size: 1.1rem;
@@ -25,6 +28,7 @@ h5{
     font-family: 'Bebas Neue', cursive;
     font-size: 1.1rem;
     height: 50px;
+    overflow-y: hidden;
 }
 header ul{
     list-style: none;
@@ -60,12 +64,26 @@ header li a{
     font-weight: 800;
     margin-top: 10px;
     overflow-y: hidden;
+    text-align: center;
 }
 #ofertas_del_mes__div_1 span{
     color: red;
+    text-shadow: 2px 2px 2px black;
+}
+.contenedor_productos_oferta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .producto_div{
-    margin: 15px;
+    margin: 10px;
+    padding: 5px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
+}
+.producto_div_ofertas{
+    margin: 10px;
     padding: 5px;
     padding-bottom: 0px;
     border-radius: 10px;
@@ -148,6 +166,7 @@ header li a{
 footer{
     color: white;
     font-family: 'Bebas Neue', cursive;
+    font-weight: 200;
 }
 footer a{
     text-decoration: none;
@@ -158,59 +177,115 @@ footer a{
 }
 .titulo_de_lista{
     font-size: 1.3rem;
+    font-weight: 400;
 }
-/* ------------------------------------------Media Querie 480px------------------------------------------------- */
 @media screen and (min-width: 480px) {
-    .menu_primario{
+    .menu_primario li a{
         font-size: 1.5rem;
+    }
+    #ofertas_del_mes__div_2 .producto_div{
+
+    }
+}
+@media screen and (min-width: 576px) {
+    #ofertas_del_mes{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
     }
     #ofertas_del_mes__div_1{
-        height: 70px;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
     }
-    .ofertas_titulo{
-        font-size: 3rem;
-    }    
-    .nombre_articulo{
-        font-size: 1.6rem;
-    }
-    .precio_articulo{
-        font-size: 1.5rem;
-    }
-    .precio_articulo span{
-        font-size: 1.2rem;
+    #oferas_del_mes__div_2{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
     }
     .icono_caract{
         font-size: 3.5rem;
     }
     .titulo_caract{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     .descripcion_caract{
-        font-size: 1.1rem;
-        font-family: 'Mukta', sans-serif;
-        overflow-y: hidden;
-    }       
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 768px) {
     .menu_secundario{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .menu_primario{
-        font-size: 1.5rem;
+        height: 60px;
         overflow-y: hidden;
     }
-.opciones{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.6rem;
+    .menu_primario li a{
+        font-size: 1.6rem;
+    }   
+    .opciones_listas{
+        font-size: 1.8rem;
     }
-}
-@media screen and (min-width: 576px){
-    .menu_secundario{
-        font-size: 1.3rem;
-    }
-}
-
-/* ------------------------------------------Media Querie 480px------------------------------------------------- */
-@media screen and (min-width: 768px) {
     .foto_opciones{
         visibility: visible;
+    }
+    .ofertas_titulo{
+        font-size: 3.5rem;
+    }
+    .nombre_articulo{
+        text-align: center;
+        color: black;
+        font-weight: 800;
+        font-size: 1.6rem;
+        overflow-y: hidden;
+    }
+    .precio_articulo{
+        text-align: center;
+        font-size: 1.3rem
+    }
+}
+@media screen and (min-width: 992px) {
+    .nombre_articulo{
+        font-size: 2rem;    
+    }
+    .precio_articulo{
+        font-size: 1.5rem;
+    }
+    .contenedor_productos_oferta span{
+        font-size: 1rem;
+    }
+    .icono_caract{
+        font-size: 4.5rem;
+    }
+    .titulo_caract{
+        font-size: 2.2rem;
+    }
+    .descripcion_caract{
+        font-size: 1.4rem;
+    }
+    footer{
+        font-size: 1.4rem;
+    }
+    .titulo_de_lista{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .ofertas_titulo{
+        font-size: 5rem;
+    }
+    .nombre_articulo{
+        font-size: 2.4rem;
+    }
+    .precio_articulo{
+        font-size: 2rem;
+    }
+    .producto_div_ofertas span{
+        font-size: 1.5rem;
+    }
+    footer{
+        font-size: 1.7rem;
     }
 }
