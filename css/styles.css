@@ -44,12 +44,18 @@ header li a{
 .navbar{
     background-color: gray;
 }
+#marcas{
+    overflow-x: scroll;
+}
 #marcas img{
     filter: grayscale(1);
     transition: filter 0.5s;
 }
 #marcas img:hover{
     filter: grayscale(0);
+}
+.categoria{
+    overflow-x: scroll;
 }
 #ofertas_del_mes{
     background-color: rgb(49, 49, 49);
@@ -183,9 +189,6 @@ footer a{
     .menu_primario li a{
         font-size: 1.5rem;
     }
-    #ofertas_del_mes__div_2 .producto_div{
-
-    }
 }
 @media screen and (min-width: 576px) {
     #ofertas_del_mes{
@@ -287,5 +290,8 @@ footer a{
     }
     footer{
         font-size: 1.7rem;
+    }
+    #marcas{
+        flex-wrap: wrap;
     }
 }
